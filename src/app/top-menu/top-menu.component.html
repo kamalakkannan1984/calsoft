@@ -1,0 +1,256 @@
+
+  <mat-toolbar color="primary">
+    <button mat-button (click)="addProductsClick()">Use-case 2 (Add product info)</button>
+    <button mat-button (click)="findLatLongClick()">Use-case 3 (find latitude/longitude)</button>
+  </mat-toolbar>
+  <mat-toolbar class="menu-bar mat-elevation-z1">   
+  <button mat-menu-item [matMenuTriggerFor]="electronics" #electronicsTrigger="matMenuTrigger" (mouseenter)="buttonEnter(electronicsTrigger)" (mouseleave)="buttonLeave(electronicsTrigger, button)" style="z-index:1050"  >Electronics</button>
+  <button mat-menu-item [matMenuTriggerFor]="tvs" #tvsTrigger="matMenuTrigger" (mouseenter)="buttonEnter(tvsTrigger)" (mouseleave)="buttonLeave(tvsTrigger, button)" style="z-index:1050" >TVs & Appliances</button>
+  <button mat-menu-item [matMenuTriggerFor]="men" >Men</button> 
+  <button mat-menu-item [matMenuTriggerFor]="women" >Women</button> 
+  <button mat-menu-item [matMenuTriggerFor]="baby" >Baby & Kids</button> 
+  <button mat-menu-item [matMenuTriggerFor]="home" >Home & Furniture</button> 
+  <button mat-menu-item [matMenuTriggerFor]="sports" >Sports, Books & More</button>
+  <button mat-menu-item [matMenuTriggerFor]="grocery" >Grocery</button> 
+  <button mat-menu-item [matMenuTriggerFor]="offerzone" >Offer Zone</button>  
+
+<mat-menu #electronics="matMenu" xPosition="before" yPosition="below" >
+<span (mouseenter)="menuenter()" (mouseleave)="menuLeave(electronicsTrigger, button)">  
+ <div class="container"
+     fxLayout
+     fxLayout.xs="column"
+     fxLayoutAlign="center"
+     fxLayoutGap="5px"
+     fxLayoutGap.xs="0" >
+  <div class="item item-1" fxFlex>
+  <button mat-menu-item class="category">Mobiles</button>
+  <button mat-menu-item>Mi</button>
+  <button mat-menu-item>Realme</button>
+  <button mat-menu-item>Samsung</button>
+  <button mat-menu-item>Infinix</button>
+  <button mat-menu-item>OPPO</button>
+  <button mat-menu-item>Apple</button>
+  <button mat-menu-item>Vivo</button>
+  <button mat-menu-item>Honor</button>
+  <button mat-menu-item>Asus</button>
+  <button mat-menu-item>Realme XT</button>
+  <button mat-menu-item>Redmi K20 | K20 Pro</button>
+  <button mat-menu-item>Redmi 8A</button>
+  <button mat-menu-item>Redmi 8</button>
+  </div>
+  <div class="item item-2" fxFlex>
+  <button mat-menu-item class="category">Mobiles</button>
+  <button mat-menu-item>Mi</button>
+  <button mat-menu-item>Realme</button>
+  <button mat-menu-item>Samsung</button>
+  <button mat-menu-item>Infinix</button>
+  <button mat-menu-item>OPPO</button>
+  <button mat-menu-item>Apple</button>
+  <button mat-menu-item>Vivo</button>
+  <button mat-menu-item>Honor</button>
+  <button mat-menu-item>Asus</button>
+  <button mat-menu-item>Realme XT</button>
+  <button mat-menu-item>Redmi K20 | K20 Pro</button>
+  <button mat-menu-item>Redmi 8A</button>
+  <button mat-menu-item>Redmi 8</button>
+  </div>
+  <div class="item item-3" fxFlex>
+  <button mat-menu-item class="category">Mobiles</button>
+  <button mat-menu-item>Mi</button>
+  <button mat-menu-item>Realme</button>
+  <button mat-menu-item>Samsung</button>
+  <button mat-menu-item>Infinix</button>
+  <button mat-menu-item>OPPO</button>
+  <button mat-menu-item>Apple</button>
+  <button mat-menu-item>Vivo</button>
+  <button mat-menu-item>Honor</button>
+  <button mat-menu-item>Asus</button>
+  <button mat-menu-item>Realme XT</button>
+  <button mat-menu-item>Redmi K20 | K20 Pro</button>
+  <button mat-menu-item>Redmi 8A</button>
+  <button mat-menu-item>Redmi 8</button>
+  </div>
+   <div class="item item-4" fxFlex><button mat-menu-item class="category">Mobiles</button>
+  <button mat-menu-item>Mi</button>
+  <button mat-menu-item>Realme</button>
+  <button mat-menu-item>Samsung</button>
+  <button mat-menu-item>Infinix</button>
+  <button mat-menu-item>OPPO</button>
+  <button mat-menu-item>Apple</button>
+  <button mat-menu-item>Vivo</button>
+  <button mat-menu-item>Honor</button>
+  <button mat-menu-item>Asus</button>
+  <button mat-menu-item>Realme XT</button>
+  <button mat-menu-item>Redmi K20 | K20 Pro</button>
+  <button mat-menu-item>Redmi 8A</button>
+  <button mat-menu-item>Redmi 8</button>
+   </div>
+    <div class="item item-5" fxFlex>
+    <button mat-menu-item class="category">Mobiles</button>
+  <button mat-menu-item>Mi</button>
+  <button mat-menu-item>Realme</button>
+  <button mat-menu-item>Samsung</button>
+  <button mat-menu-item>Infinix</button>
+  <button mat-menu-item>OPPO</button>
+  <button mat-menu-item>Apple</button>
+  <button mat-menu-item>Vivo</button>
+  <button mat-menu-item>Honor</button>
+  <button mat-menu-item>Asus</button>
+  <button mat-menu-item>Realme XT</button>
+  <button mat-menu-item>Redmi K20 | K20 Pro</button>
+  <button mat-menu-item>Redmi 8A</button>
+  <button mat-menu-item>Redmi 8</button>
+    </div>
+</div>
+</span>
+</mat-menu>
+
+<mat-menu #tvs="matMenu"  xPosition="before" yPosition="below" > 
+<span (mouseenter)="menuenter()" (mouseleave)="menuLeave(tvsTrigger, button)">
+  <div class="container"
+     fxLayout
+     fxLayout.xs="column"
+     fxLayoutAlign="center"
+     fxLayoutGap="5px"
+     fxLayoutGap.xs="0" >
+  <div class="item item-1" fxFlex>
+  <button mat-menu-item class="category">Mobiles</button>
+  <button mat-menu-item >Mi</button>
+  <button mat-menu-item >Realme</button>
+  <button mat-menu-item >Samsung</button>
+  <button mat-menu-item>Infinix</button>
+  <button mat-menu-item>OPPO</button>
+  <button mat-menu-item>Apple</button>
+  <button mat-menu-item>Vivo</button>
+  <button mat-menu-item>Honor</button>
+  <button mat-menu-item>Asus</button>
+  <button mat-menu-item>Realme XT</button>
+  <button mat-menu-item>Redmi K20 | K20 Pro</button>
+  <button mat-menu-item>Redmi 8A</button>
+  <button mat-menu-item>Redmi 8</button>
+  </div>
+  <div class="item item-2" fxFlex>
+  <button mat-menu-item class="category">Mobiles</button>
+  <button mat-menu-item >Mi</button>
+  <button mat-menu-item >Realme</button>
+  <button mat-menu-item >Samsung</button>
+  <button mat-menu-item>Infinix</button>
+  <button mat-menu-item>OPPO</button>
+  <button mat-menu-item>Apple</button>
+  <button mat-menu-item>Vivo</button>
+  <button mat-menu-item>Honor</button>
+  <button mat-menu-item>Asus</button>
+  <button mat-menu-item>Realme XT</button>
+  <button mat-menu-item>Redmi K20 | K20 Pro</button>
+  <button mat-menu-item>Redmi 8A</button>
+  <button mat-menu-item>Redmi 8</button>
+  </div>
+  <div class="item item-3" fxFlex>
+  <button mat-menu-item class="category">Mobiles</button>
+  <button mat-menu-item >Mi</button>
+  <button mat-menu-item >Realme</button>
+  <button mat-menu-item >Samsung</button>
+  <button mat-menu-item>Infinix</button>
+  <button mat-menu-item>OPPO</button>
+  <button mat-menu-item>Apple</button>
+  <button mat-menu-item>Vivo</button>
+  <button mat-menu-item>Honor</button>
+  <button mat-menu-item>Asus</button>
+  <button mat-menu-item>Realme XT</button>
+  <button mat-menu-item>Redmi K20 | K20 Pro</button>
+  <button mat-menu-item>Redmi 8A</button>
+  <button mat-menu-item>Redmi 8</button>
+  </div>
+   <div class="item item-4" fxFlex><button mat-menu-item class="category">Mobiles</button>
+  <button mat-menu-item >Mi</button>
+  <button mat-menu-item >Realme</button>
+  <button mat-menu-item >Samsung</button>
+  <button mat-menu-item>Infinix</button>
+  <button mat-menu-item>OPPO</button>
+  <button mat-menu-item>Apple</button>
+  <button mat-menu-item>Vivo</button>
+  <button mat-menu-item>Honor</button>
+  <button mat-menu-item>Asus</button>
+  <button mat-menu-item>Realme XT</button>
+  <button mat-menu-item>Redmi K20 | K20 Pro</button>
+  <button mat-menu-item>Redmi 8A</button>
+  <button mat-menu-item>Redmi 8</button>
+   </div>
+    <div class="item item-5" fxFlex>
+    <button mat-menu-item class="category">Mobiles</button>
+  <button mat-menu-item >Mi</button>
+  <button mat-menu-item >Realme</button>
+  <button mat-menu-item >Samsung</button>
+  <button mat-menu-item>Infinix</button>
+  <button mat-menu-item>OPPO</button>
+  <button mat-menu-item>Apple</button>
+  <button mat-menu-item>Vivo</button>
+  <button mat-menu-item>Honor</button>
+  <button mat-menu-item>Asus</button>
+  <button mat-menu-item>Realme XT</button>
+  <button mat-menu-item>Redmi K20 | K20 Pro</button>
+  <button mat-menu-item>Redmi 8A</button>
+  <button mat-menu-item>Redmi 8</button>
+    </div>
+</div>
+  </span>
+</mat-menu>
+
+<mat-menu #men="matMenu"  xPosition="before" >
+  <button mat-menu-item>Insects</button>
+  <button mat-menu-item>Molluscs</button>
+  <button mat-menu-item>Crustaceans</button>
+  <button mat-menu-item>Corals</button>
+  <button mat-menu-item>Arachnids</button>
+  <button mat-menu-item>Velvet worms</button>
+  <button mat-menu-item>Horseshoe crabs</button>
+</mat-menu>
+
+<mat-menu #women="matMenu">
+  <button mat-menu-item>Baikal oilfish</button>
+  <button mat-menu-item>Bala shark</button>
+  <button mat-menu-item>Ballan wrasse</button>
+  <button mat-menu-item>Bamboo shark</button>
+  <button mat-menu-item>Banded killifish</button>
+</mat-menu>
+
+<mat-menu #baby="matMenu">
+  <button mat-menu-item>Sonoran desert toad</button>
+  <button mat-menu-item>Western toad</button>
+  <button mat-menu-item>Arroyo toad</button>
+  <button mat-menu-item>Yosemite toad</button>
+</mat-menu>
+
+<mat-menu #home="matMenu">
+  <button mat-menu-item>Banded Day Gecko</button>
+  <button mat-menu-item>Banded Gila Monster</button>
+  <button mat-menu-item>Black Tree Monitor</button>
+  <button mat-menu-item>Blue Spiny Lizard</button>
+  <button mat-menu-item disabled>Velociraptor</button>
+</mat-menu>
+
+<mat-menu #sports="matMenu">
+  <button mat-menu-item>Banded Day Gecko</button>
+  <button mat-menu-item>Banded Gila Monster</button>
+  <button mat-menu-item>Black Tree Monitor</button>
+  <button mat-menu-item>Blue Spiny Lizard</button>
+  <button mat-menu-item disabled>Velociraptor</button>
+</mat-menu>
+
+<mat-menu #grocery="matMenu">
+  <button mat-menu-item>Banded Day Gecko</button>
+  <button mat-menu-item>Banded Gila Monster</button>
+  <button mat-menu-item>Black Tree Monitor</button>
+  <button mat-menu-item>Blue Spiny Lizard</button>
+  <button mat-menu-item disabled>Velociraptor</button>
+</mat-menu>
+
+<mat-menu #offerzone="matMenu">
+  <button mat-menu-item>Banded Day Gecko</button>
+  <button mat-menu-item>Banded Gila Monster</button>
+  <button mat-menu-item>Black Tree Monitor</button>
+  <button mat-menu-item>Blue Spiny Lizard</button>
+  <button mat-menu-item disabled>Velociraptor</button>
+</mat-menu>
+
+  </mat-toolbar>

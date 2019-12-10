@@ -1,0 +1,139 @@
+<div class="container"
+     fxLayout
+     fxLayout.xs="column"
+     fxLayoutAlign="center"
+     fxLayoutGap="5px"
+     fxLayoutGap.xs="0" >
+  <div class="item item-1" fxFlex="80%">
+    <mat-vertical-stepper linear  #stepper>
+  <mat-step [stepControl]="firstFormGroup">
+    <form [formGroup]="firstFormGroup">
+      <ng-template matStepLabel>General</ng-template>
+
+       <!-- Name -->
+      <mat-form-field appearance="outline">
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="Name" formControlName="name" required > 
+        <mat-error>Required</mat-error>   
+      </mat-form-field>
+
+      <!-- Description -->
+      <mat-form-field appearance="outline">
+        <mat-label>Description</mat-label>
+        <input matInput placeholder="Description" formControlName="description" required >
+        <mat-error>Required</mat-error>       
+      </mat-form-field>
+
+       <!-- Description -->
+       <mat-form-field appearance="outline">
+        <mat-label>Short Description</mat-label>
+        <input matInput placeholder="Short Description" formControlName="shortDescription" required>
+        <mat-error>Required</mat-error>       
+       </mat-form-field>
+
+       <!-- SKU -->
+       <mat-form-field appearance="outline">
+        <mat-label>SKU</mat-label>
+        <input matInput placeholder="SKU" formControlName="sku" required>
+        <mat-error>Required</mat-error>       
+       </mat-form-field>
+
+       <!-- Weight -->
+      <mat-form-field appearance="outline">
+        <mat-label>Weight</mat-label>
+        <input matInput placeholder="Weight" formControlName="weight" required>
+        <mat-error>Required</mat-error>       
+      </mat-form-field>
+
+      <div>
+        <button mat-raised-button color="primary" matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel>Prices</ng-template>
+      <mat-form-field>
+        <input matInput placeholder="Price" formControlName="price" required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button color="primary" matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Technical Specification</ng-template>
+    You are now done.
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button (click)="stepper.reset()">Reset</button>
+    </div>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Meta Information</ng-template>
+    You are now done.
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button (click)="stepper.reset()">Reset</button>
+    </div>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Images</ng-template>
+    You are now done.
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button (click)="stepper.reset()">Reset</button>
+    </div>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Recurring Profile</ng-template>
+    You are now done.
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button (click)="stepper.reset()">Reset</button>
+    </div>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Design</ng-template>
+    You are now done.
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button (click)="stepper.reset()">Reset</button>
+    </div>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Gift Options</ng-template>
+    You are now done.
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button (click)="stepper.reset()">Reset</button>
+    </div>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>PointsPay Checkout</ng-template>
+    You are now done.
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button (click)="stepper.reset()">Reset</button>
+    </div>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Inventory</ng-template>
+    You are now done.
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button (click)="stepper.reset()">Reset</button>
+    </div>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Categories</ng-template>
+    You are now done.
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button (click)="stepper.reset()">Reset</button>
+    </div>
+  </mat-step>
+</mat-vertical-stepper>
+  </div>
+  </div>
